@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Gilrouy";
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(117, 85, 123);
+  }
+  
+  #panel {
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 900px) {
+    #panel {
+      width: 100%;
+      height: 90%;
+    }
+  }
+  
+  #ptop {
+    padding: 0px 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(81, 0, 132);
+  }
+  
+  .elem {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .elem h2 {
+    font-weight: 500;
+    font-size: 22px;
+  }
+  
+  .box {
+    color: rgb(150, 48, 161);
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  
+  #pbtm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    width: 100%;
+    height: calc(100% - 60px);
+  }
+  
+  .bubble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(76, 16, 104);
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 500;
+  }
+  
+  .bubble:hover {
+    cursor: pointer;
+    background-color: rgb(63, 96, 63);
+  }
+  
+  @media (max-width: 900px) {
+    .bubble {
+      width: 40px;
+      height: 40px;
+    }
+    #pbtm {
+      gap: 5px;
+      padding: 12px;
+    }
+  }
+
+@media (max-width:1500px) {
+    #panel{
+        width: 90%;
+        height: 90%;
+    }
+}
+
+@media (max-width:600px) {
+    #panel{
+        width: 100%;
+        height: 90%;
+        border-radius: 2px;
+    }
+    #ptop{
+        padding: 20px;
+        width: 100%;
+    }
+    .elem{
+        gap: 2px;
+    }
+    .elem h2{
+        font-size: 12px;
+    }
+    .box{
+        padding: 10px;
+    }
+    #pbtm{
+        gap: 2px;
+        padding: 4px;
+    }
+    .bubble{
+    width: 35px;
+    height: 35px;
+    }
+}
