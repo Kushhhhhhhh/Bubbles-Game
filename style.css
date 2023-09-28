@@ -90,7 +90,7 @@
   
   .bubble:hover {
     cursor: pointer;
-    background-color: rgb(63, 96, 63);
+    background-color: rgb(160, 89, 197);
   }
   
   @media (max-width: 900px) {
